@@ -1,29 +1,29 @@
 import './App.css';
+import splashImage from './embedded/background.webp'
 import TopBar from './components/TopBar';
-import styled from 'styled-components'
-import StoreListing from './components/StroreListing';
-import Background from './components/background';
+import styled from 'styled-components';
+import StoreListing from './components/StoreListing';
 
-/*const Splash = styled.div`
-  width: 100%;
+const Splash = styled.div`
+  width: 100vw;
   height: 250px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(${SplashImage});
+  background-size: contain;
+  background-image: url(${ splashImage });
   background-color: #dfeed6;
   position: absolute;
-  left: 0px;
-  top: 40px;
+  left: 0;
+  top:40px;
   right: 0;
-  z-index: -1;
-`*/
+  z-index: -1
+`
+
 
 function App() {
   return <>
-    <TopBar/>
-    <Background/>
-    <StoreListing/>
+    <TopBar />
+    <Splash />
+    <StoreListing />
   </>
 }
-
 export default App;

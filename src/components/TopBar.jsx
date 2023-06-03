@@ -1,4 +1,4 @@
-import instacartlogo from "../embedded/logo.svg";
+import instacartLogo from "../embedded/logo.svg";
 import { Navbar, Button, Nav } from "react-bootstrap";
 
 export default function TopBar() {
@@ -10,18 +10,16 @@ export default function TopBar() {
         }}
         href="#home"
       >
-        <img src={instacartlogo} alt="Instacart Logo"></img>
+        <img src={instacartLogo} alt="Instacart Logo" />
       </Navbar.Brand>
-
-      <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
-
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav ClassName="mr-auto"></Nav>
+        <Nav className="mr-auto"></Nav>
         <Nav>
           <Nav.Link href="#LogIn">Log In</Nav.Link>
           <Button variant="success">Sign Up</Button>{" "}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  );
+  )
 }

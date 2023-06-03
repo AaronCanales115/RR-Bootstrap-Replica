@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
 
 const StyledContainer = styled(Container)`
-    margin-top: 30px;
+    margin-top: 320px;
     text-align: center;
 `
 
@@ -17,7 +17,6 @@ const CircleDiv = styled.div`
     background-color: ${ props => props.color || 'red'};
     border: 1px solid red;
     border-radius: 100%;
-    margin-left: 700px
 `
 
 const HorizontalRow = styled(Row)`
@@ -28,7 +27,7 @@ const stores = ['Aldi', 'Ralph\'s', 'Nobles', '7-11', 'WinCo', 'Smith\'s'];
 
 const storesMap = stores.map((storeName, key) => {
     return <HorizontalRow key={key}>
-        <Col>
+        <Col xs='.5'>
             <CircleDiv />
         </Col>
         <Col>
